@@ -132,10 +132,10 @@ class SigninPage extends StatelessWidget {
                     ),
                     const Padding(padding: EdgeInsets.all(10.0)),
                     Row(
-                      
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        SizedBox(
-                          child: GestureDetector(
+                        
+                          GestureDetector(
                             child: const Text("Don't have an account? "),
                             onTap: () => {
                               Navigator.push(
@@ -144,7 +144,7 @@ class SigninPage extends StatelessWidget {
                                       builder: (context) => const SignUpPage()))
                             },
                           ),
-                        ),
+                        
                         GestureDetector( child: const Text("Sign up",style: TextStyle(color: Colors.white),),onTap: ()=>{Navigator.push(context, MaterialPageRoute(builder: (context)=> const SignUpPage()))},)
                       ],
                     ),
